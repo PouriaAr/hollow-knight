@@ -1,0 +1,113 @@
+/* تنظیم فونت و بک‌گراند */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero img {
+    width: 300px;
+    height: auto;
+}
+
+.intro p {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.custom {
+    background-color: rgb(23, 2, 73);
+}
+
+.custom .nav-link {
+    color: #ffffff;
+}
+
+.custom .nav-link:hover {
+    color: orangered;
+}
+
+.custom .navbar-brand:hover {
+    color: orangered;
+}
+
+.map {
+    width: 950px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.area {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px;
+}
+
+.area-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .area-content {
+        flex-direction: column !important;
+        text-align: center;
+    }
+}
+
+.area-content.left {
+    flex-direction: row;
+}
+
+.area-content.right {
+    flex-direction: row-reverse;
+}
+
+.area-content img {
+    max-width: 100%;
+    width: 650px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.area-content .text {
+    max-width: 500px;
+}
+
+.area-content .text h2 {
+    font-size: 3rem;
+    font-family: "Uncial Antiqua", serif;
+}
+
+.area-content .text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+footer a {
+    color: orangered;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
