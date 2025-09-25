@@ -18,11 +18,13 @@
     <div id="navbar"></div>
 
     <script>
-        // برای لود کردن navbar
+
         fetch("navbar.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById("navbar").innerHTML = data;
+
+                document.getElementById("home").style.color = "red";
             });
 
     </script>

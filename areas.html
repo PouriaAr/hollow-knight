@@ -16,6 +16,7 @@
 
 <body style="background-color: rgb(2, 1, 17);" class="d-flex flex-column min-vh-100">
 
+
     <div id="navbar"></div>
 
     <script>
@@ -24,9 +25,12 @@
             .then(res => res.text())
             .then(data => {
                 document.getElementById("navbar").innerHTML = data;
+
+                document.getElementById("area").style.color = "orange";
             });
 
     </script>
+
 
     <main class="flex-grow-1">
         <section>
