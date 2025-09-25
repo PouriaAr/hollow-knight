@@ -1,4 +1,3 @@
-/* تنظیم فونت و بک‌گراند */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #1c1c1c;
@@ -110,4 +109,25 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.active-link {
+    color: orangered;
+    font-weight: bold;
+}
+
+
+.boss-name {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.boss {
+    text-align: center;
+}
+
+.boss p {
+    font-size: 20px;
 }
