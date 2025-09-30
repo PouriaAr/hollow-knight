@@ -43,7 +43,7 @@ function checkAnswers() {
         resImg.src = "bosses/npc_cloth.png"
     }
 
-    else {
+    if (correct > 8) {
         resultP.textContent = "Perfect!"
         resultP.style.color = "green"
         resImg.src = "bosses/npc_nailmaster.png"
@@ -51,3 +51,4 @@ function checkAnswers() {
 
     resultDiv.textContent = `You answered ${correct} out of ${total} correctly!`;
 }
+
