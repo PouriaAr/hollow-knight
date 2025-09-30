@@ -31,19 +31,19 @@ function checkAnswers() {
         resultP.style.color = "red"
         resImg.src = "bosses/npc_zote.png"
     }
-    if (correct > 3 && correct <= 5) {
+    else if (correct > 3 && correct <= 5) {
         resultP.textContent = "Not Bad"
         resultP.style.color = "yellow"
         resImg.src = "bosses/npc_quirrel.png"
     }
 
-    if (correct > 5 && correct <= 8) {
+    else if (correct > 5 && correct <= 8) {
         resultP.textContent = "Good"
         resultP.style.color = "lightgreen"
         resImg.src = "bosses/npc_cloth.png"
     }
 
-    if (correct > 8) {
+    else {
         resultP.textContent = "Perfect!"
         resultP.style.color = "green"
         resImg.src = "bosses/npc_nailmaster.png"
@@ -51,4 +51,3 @@ function checkAnswers() {
 
     resultDiv.textContent = `You answered ${correct} out of ${total} correctly!`;
 }
-
