@@ -9,7 +9,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link href="styles.css" rel="stylesheet">
-    <title>Hollow knight - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow knight - Quiz</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -38,4 +39,105 @@
             </div>
         </div>
     </nav>
+
+    <div class="container my-5">
+        <div class="container mt-4 text-center">
+            <img src="bosses/Mister_Mushroom.png" alt="Quiz Icon" width="100" class="mb-3">
+            <h1 class="mb-3">Hollow Knight Quiz</h1>
+            <p class="lead">Answer the questions below and see how many you get right!</p>
+            <hr>
+        </div>
+        <form id="quizForm">
+
+            <div class="mb-4">
+                <p><strong>1. Hollow Knight is developed by which studio?</strong></p>
+                <div><input type="radio" name="q1" value="a"> Team Cherry</div>
+                <div><input type="radio" name="q1" value="b"> FromSoftware</div>
+                <div><input type="radio" name="q1" value="c"> Capcom</div>
+                <div><input type="radio" name="q1" value="d"> Nintendo</div>
+            </div>
+
+            <div class="mb-4">
+                <p><strong>2. What is the name of the main character you play as?</strong></p>
+                <div><input type="radio" name="q2" value="a"> The Knight</div>
+                <div><input type="radio" name="q2" value="b"> Hornet</div>
+                <div><input type="radio" name="q2" value="c"> The Hollow knight</div>
+                <div><input type="radio" name="q2" value="d"> Ghost</div>
+            </div>
+            <div class="mb-4">
+                <p><strong>3. Which ability allows the Knight to dash forward quickly?</strong></p>
+                <div><input type="radio" name="q3" value="a"> Crystal Heart</div>
+                <div><input type="radio" name="q3" value="b"> Mothwing Cloak</div>
+                <div><input type="radio" name="q3" value="c"> Isma's Tear</div>
+                <div><input type="radio" name="q3" value="d"> Shade Cloak</div>
+            </div>
+            <div class="mb-4">
+                <p><strong>4. Who is the mysterious protector of Hallownest that fights you twice?</strong></p>
+                <div><input type="radio" name="q4" value="a"> Zote</div>
+                <div><input type="radio" name="q4" value="b"> Hornet</div>
+                <div><input type="radio" name="q4" value="c"> The Radiance</div>
+                <div><input type="radio" name="q4" value="d"> Tiso</div>
+            </div>
+            <div class="mb-4">
+                <p><strong>5. Which area is known for its lush greenery and mossy enemies?</strong></p>
+                <div><input type="radio" name="q5" value="a"> Deepnest</div>
+                <div><input type="radio" name="q5" value="b"> Crystal Peak</div>
+                <div><input type="radio" name="q5" value="c"> Howling Cliffs</div>
+                <div><input type="radio" name="q5" value="d"> Greenpath</div>
+            </div>
+            <div class="mb-4">
+                <p><strong>6. What currency is used in Hollow Knight?</strong></p>
+                <div><input type="radio" name="q6" value="a"> Ore</div>
+                <div><input type="radio" name="q6" value="b"> Essence</div>
+                <div><input type="radio" name="q6" value="c"> Geo</div>
+                <div><input type="radio" name="q6" value="d"> Soul</div>
+            </div>
+            <div class="mb-4">
+                <p><strong>7. Which nail upgrade requires Pale Ore to forge?</strong></p>
+                <div><input type="radio" name="q7" value="a"> Channelled Nail</div>
+                <div><input type="radio" name="q7" value="b"> Coiled Nail</div>
+                <div><input type="radio" name="q7" value="c"> Sharpened Nail</div>
+                <div><input type="radio" name="q7" value="d"> Old Nail</div>
+            </div>
+            <div class="mb-4">
+                <p><strong>8. Who is the final dream boss of the base game?</strong></p>
+                <div><input type="radio" name="q8" value="a"> Radiance</div>
+                <div><input type="radio" name="q8" value="b"> Pure Vessel</div>
+                <div><input type="radio" name="q8" value="c"> Hollow Knight</div>
+                <div><input type="radio" name="q8" value="d"> Grimm</div>
+            </div>
+            <div class="mb-4">
+                <p><strong>9. What charm allows you to heal faster?</strong></p>
+                <div><input type="radio" name="q9" value="a"> Grubsong</div>
+                <div><input type="radio" name="q9" value="b"> Soul Catcher</div>
+                <div><input type="radio" name="q9" value="c"> Quick Focus</div>
+                <div><input type="radio" name="q9" value="d"> Fragile Heart</div>
+            </div>
+            <div class="mb-4">
+                <p><strong>10. How many Grubs are hidden throughout Hallownest?</strong></p>
+                <div><input type="radio" name="q10" value="a"> 31</div>
+                <div><input type="radio" name="q10" value="b"> 46</div>
+                <div><input type="radio" name="q10" value="c"> 48</div>
+                <div><input type="radio" name="q10" value="d"> 50</div>
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="checkAnswers()">Submit</button>
+        </form>
+
+        <div id="result" class="mt-4 alert alert-info d-none">
+            <img class="mb-3">
+        </div>
+        <div class="text-center">
+            <p id="res" class="lead" style="font-size: 30px;"></p>
+            <img style="width: 300px;" id="resImg">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Hollow Knight Fan Site</p>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+
 </body>
