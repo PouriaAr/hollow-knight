@@ -1,3 +1,8 @@
+<!-- Part of this code was written/annotated with the help of ChatGPT.
+     However, the main idea, design, and most of the implementation 
+     were created by myself. -->
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -9,12 +14,14 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link href="styles.css" rel="stylesheet">
+    <!-- Ensures proper scaling on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Hollow knight - Home</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-
+    <!-- Navigation bar with Bootstrap classes -->
     <nav class="navbar navbar-expand-lg navbar-dark custom">
         <div class="container-fluid">
             <a style="color: orangered; font-weight: bold;" class="navbar-brand" href="index.html">Home</a>
@@ -41,15 +48,20 @@
         </div>
     </nav>
 
+    <!-- Main content of the page -->
+
     <main class="flex-grow-1">
         <section>
             <img src="logo_main.webp" style="width: 600px;" alt="Hollow Knight" class="img-fluid">
         </section>
+
+        <!-- Hero section with main image and welcome text -->
         <section class="hero">
             <img src="bosses/char_knight_action.png" alt="Knight" class="img-fluid">
             <h2>Welcome to Hallownest</h2>
         </section>
 
+        <!-- Introductory description of the game -->
         <section class="intro">
             <p>"Beneath the fading town of Dirtmouth sleeps an ancient, forgotten kingdom. Many are drawn beneath the
                 surface searching for riches, or glory, or answers to old secrets. As the enigmatic Hollow Knight,
@@ -61,6 +73,7 @@
                 class="img-fluid">
         </section>
 
+        <!-- Featured links section (grid with 4 columns) -->
         <section class="container my-5">
             <div class="row text-center g-4">
                 <div class="col-md-3 featured-link text-center">
@@ -95,6 +108,7 @@
 
     </main>
 
+    <!-- Footer with copyright -->
     <footer>
         <p>&copy; 2025 Hollow Knight Fan Site</p>
     </footer>
