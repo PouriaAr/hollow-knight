@@ -47,30 +47,15 @@ In summary, the Hollow Knight Fan Page combines visual appeal, interactive eleme
 ## File Structure
 
 Hollow-Knight/
-│
 ├── index.html       # Home page of the fan site
 ├── bosses.html      # Page showcasing Hollow Knight bosses
 ├── areas.html       # Page showing different areas in the game
 ├── questions.html   # Interactive quiz page
 ├── silksong.html    # Page dedicated to Hollow Knight: Silksong
-│
 ├── styles.css       # Custom CSS file for styling the entire site
 ├── script.js        # JavaScript file handling quiz functionality
-│
 ├── bosses/          # Folder containing boss images
-│   ├── boss_false_knight.png
-│   ├── boss_soul_master.png
-│   └── ...other bosses
-│
 ├── Areas/           # Folder containing images of game areas
-│   ├── Forgotten.webp
-│   ├── Greenpath.webp
-│   └── ...other areas
-│
 ├── npc/             # Folder containing character images
-│   ├── npc_grindle.png
-│   ├── npc_nuu.png
-│   └── ...other characters
-│
 ├── tc.webp          # Team Cherry logo image
 └── README.md        # This file describing the project
